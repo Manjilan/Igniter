@@ -1,0 +1,278 @@
+/*--------Whole Document--------  */
+body{
+  font: 14px Roboto;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+h2{
+  font: 28px Roboto;
+  color: #283647;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gradient-button{
+  background: linear-gradient(to right, #F36819 , #F7931D);
+  height: 40px;
+  width: 215px;
+  border-radius: 5px;
+  font: 16px Roboto;
+  letter-spacing: 2px;
+  border: none;
+  filter: drop-shadow(-1px 1px 1px #707070);
+}
+/*--------Nav Bar--------  */
+#logo{
+  height: 52px;
+  display: block;
+  margin: 3px auto;
+}
+nav{
+  background: #1676DD;
+  height: 60px;
+}
+
+/*--------Header--------  */
+header{
+  height: 509px;
+  background: linear-gradient(to right, rgba(243, 104, 25, 0.3) , rgba(0, 0, 0, 0.3)), url("../assets/hero-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  font: bold 48px Roboto;
+  color: white;
+  padding: 255px 0 0 251px;
+  margin: 0 0 1%;
+}
+header button{
+  margin-left: 251px;
+}
+.envelope{
+  height: 40px;
+  display: inline-block;
+  width:50px;
+  background: linear-gradient(to right, #F36819 , #F7931D);
+  position: fixed;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  filter: drop-shadow(-1px 1px 1px #707070);
+}
+.envelope img{
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/*--------Notes Section--------  */
+.notes{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% auto 2%;
+  width: 70%;
+}
+.notes div{
+  width:40%;
+  margin: 2% auto;
+  display: flex;
+  padding: 0 2%;
+}
+.notes div img{
+  margin: 0 10%;
+}
+
+/*--------Slanted Section--------  */
+#slanted{
+  background: url("../assets/slanted-gradient-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 254px;
+  padding: 5% 10%;
+}
+#slanted p{
+  font-size: 30px;
+  width: 90%;
+  text-align: center;
+  margin: 3% auto;
+}
+
+/*--------Statistics Section--------  */
+span{
+  font-weight: bold;
+  color: #F36819;
+}
+.statistics-block{
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  margin: 0 auto 10%;
+  width: 70%;
+}
+.statistics, .details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.statistics div{
+  width: 20%;
+}
+.details button{
+  margin-right: 10%;
+}
+.details p{
+  width: 50%;
+}
+h3{
+  font: bold 55px Roboto;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30% 0 10%;
+}
+.statistics p{
+  color: #F36819;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+/* -----------Checkerboard Section --------*/
+.checkerboard{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 0;
+}
+.checkerboard div{
+  width: 30%;
+}
+.checkerboard div:first-child{
+    margin: 0 auto;
+}
+.checkerboard div:last-child{
+  margin-right: 18%;
+}
+.checkerboard img{
+  height: 350px;
+  width: 705px;
+}
+.checkerboard h2{
+  color: #F36819;
+  text-align: left;
+}
+.checkerboard h3{
+  font: 20px Roboto;
+  color: #F7931D;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* -----------Modal--------*/
+.modal-content{
+  width: 40%;
+  margin: 0 auto;
+}
+form, form div{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.half-width{
+  width: 48%;
+}
+.full-width{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+.modal {
+ /* padding: 20px;*/
+  background-color: rgba(0, 0, 0, .6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-content h2{
+  color: #F36819;
+}
+label{
+  margin: 10px 5px;
+}
+input{
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+textarea{
+  border-radius: 5px;
+  height: 100px;
+  background: white;
+  resize: none;
+  margin-bottom: 5%;
+}
+form button{
+  margin: 0 auto;
+}
+/* -----------Media Queries--------*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .modal-content{
+    width: 75%;
+  }
+  h1{
+    padding-left: 30%;
+  }
+  header button{
+    margin-left: 30%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  h1{
+    padding-left: 20%;
+  }
+  header button{
+    margin-left: 20%;
+  }
+  .statistics div, .details p, .checkerboard div{
+    width: 90%;
+  }
+  .checkerboard div:last-child{
+    margin: 0 auto;
+  }
+  .checkerboard img{
+    width: 100%;
+    height: auto;
+  }
+  .statistics-block .gradient-button{
+    margin: 0 auto;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .half-width{
+    width: 100%;
+  }
+  h1{
+    padding: 20% 10%;
+  }
+  header button{
+    margin-left: 10%;
+  }
+  .notes div{
+    width: 100%;
+  }
+  #slanted p{
+    font-size: 1.5em;
+    margin: 4em 0 0;
+    height: 100%;
+  }
+
+}
