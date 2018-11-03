@@ -20,6 +20,9 @@ h2{
   border: none;
   filter: drop-shadow(-1px 1px 1px #707070);
 }
+p{
+  line-height: 20px;
+}
 /*--------Nav Bar--------  */
 #logo{
   height: 52px;
@@ -88,12 +91,13 @@ header button{
   color: white;
   height: 254px;
   padding: 5% 10%;
+  margin-bottom: 5%;
 }
 #slanted p{
   font-size: 30px;
   width: 90%;
   text-align: center;
-  margin: 3% auto;
+  margin: 10% auto;
 }
 
 /*--------Statistics Section--------  */
@@ -146,7 +150,7 @@ h3{
   width: 30%;
 }
 .checkerboard div:first-child{
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .checkerboard div:last-child{
   margin-right: 18%;
@@ -175,18 +179,19 @@ form, form div{
   display: flex;
   flex-direction: column;
   color: white;
+  font: 16px Roboto;
 }
 .half-width{
   width: 48%;
 }
 .full-width{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   flex-wrap: wrap;
- }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .modal {
- /* padding: 20px;*/
+  /* padding: 20px;*/
   background-color: rgba(0, 0, 0, .6);
   display: none;
   justify-content: center;
@@ -207,6 +212,7 @@ input{
   height: 45px;
   border-radius: 5px;
   margin-bottom: 2%;
+  font: 16px Roboto;
 }
 textarea{
   border-radius: 5px;
@@ -218,6 +224,31 @@ textarea{
 form button{
   margin: 0 auto;
 }
+/* -----------Animations--------*/
+.fadeIn{
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation: zoomIn 3s;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* -----------Media Queries--------*/
 
 /* Large devices (laptops/desktops, 992px and up) */
