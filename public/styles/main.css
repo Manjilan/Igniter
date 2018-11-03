@@ -23,6 +23,12 @@ h2{
 p{
   line-height: 20px;
 }
+.slider, .notes,.statistics-block,.statistics, .details, .checkerboard, form, form div, .full-width {
+  display: flex;
+}
+.notes, .statistics, .details, .checkerboard, .full-width {
+  flex-wrap: wrap;
+}
 /*--------Nav Bar--------  */
 #logo{
   height: 52px;
@@ -74,7 +80,6 @@ header button{
   margin: 20px 10px;
 }
 .slider{
-  display: flex;
   justify-content: center;
 }
 .active{
@@ -82,8 +87,6 @@ header button{
 }
 /*--------Notes Section--------  */
 .notes{
-  display: flex;
-  flex-wrap: wrap;
   margin: 5% auto 2%;
   width: 70%;
 }
@@ -120,17 +123,14 @@ span{
   color: #F36819;
 }
 .statistics-block{
-  display: flex;
   flex-direction: column;
   width: 950px;
-  margin: 0 auto 10%;
+  margin: 0 auto 7%;
   width: 70%;
 }
 .statistics, .details{
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 .statistics div{
   width: 20%;
@@ -155,9 +155,7 @@ h3{
 }
 /* -----------Checkerboard Section --------*/
 .checkerboard{
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 5% 0;
 }
 .checkerboard div{
@@ -190,7 +188,6 @@ h3{
   margin: 0 auto;
 }
 form, form div{
-  display: flex;
   flex-direction: column;
   color: white;
   font: 16px Roboto;
@@ -199,10 +196,8 @@ form, form div{
   width: 48%;
 }
 .full-width{
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .modal {
   /* padding: 20px;*/

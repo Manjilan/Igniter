@@ -32,7 +32,7 @@ function slideTimer(){
     $('.active').next().toggleClass('active');
     $('.active').prev().toggleClass('active');
     if(slideIndex==backgroundImages.length-1){
-        $('.round-button:first-child').toggleClass('active');
+      $('.round-button:first-child').toggleClass('active');
     }
   } else {
     slideIndex=0;
